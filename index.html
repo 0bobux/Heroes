@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КарП</title>
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+    <form name="addHero" class="form">
+        <input class="form-input" type="text" name="title" id="title" required placeholder="Имя героя"/>
+        <input class="form-input" type="text" name="description" id="description" required placeholder="Описание"/>
+        <div class="form-parameters">
+            <input class="form-input parameter-input" type="number" name="str" id="str" min="1" max="99" placeholder="Сила" />
+            <input class="form-input parameter-input" type="number" name="agi" id="agi" min="1" max="99" placeholder="Ловкость" />
+            <input class="form-input parameter-input" type="number" name="hp" id="hp" min="1" max="100" placeholder="Очки жизни" />
+            <input class="form-input parameter-input" type="number" name="int" id="int" min="1" max="99" placeholder="Интеллект" />
+        </div>
+      <button class="form-button" id="addHero">Добавить героя</button>
+        <p id="errorText"></p>
+    </form>
+    <div id="cards-container"></div>
+    <script src="./script.js"></script> 
+</body>
+</html>
